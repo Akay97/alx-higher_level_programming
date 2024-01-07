@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 def no_c(my_string):
-    string =""
+    new_string =""
     for lit in my_string:
         if lit != "c" and lit != "C":
-            string += lit
-    return string
+            new_string += lit
+    return new_string
