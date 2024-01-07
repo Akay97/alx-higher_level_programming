@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 def no_c(my_string):
-    result = ""
-    for char in my_string:
-        if char.lower() != 'c':
-            result += char
-    return result
+    string = ""
+    for lit in range(len(my_string)):
+        if (my_string[lit] != 'c' and my_string[lit] != 'C'):
+            string += my_string[lit]
+    return string
