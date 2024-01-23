@@ -2,11 +2,11 @@
 """square module."""
 
 class Square:
-    """This class represents a square."""
+    """Define a square."""
 
     def __init__(self, size):
         """
-        Initializes a new instance of the Square class.
+        Constructor.
 
         Args:
             size: The size of the square.
