@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """square module."""
 
+
 class Node:
     """
     This class represents a node of a singly linked list.
