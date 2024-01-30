@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a Rectangle."""
+"""Define a Rectangle class."""
 
 
 class Rectangle:
@@ -11,6 +11,8 @@ class Rectangle:
         height (int): The height of the rectangle.
     """
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
         Initialize a Rectangle instance.
@@ -21,6 +23,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -97,3 +100,32 @@ class Rectangle:
             int: The perimeter of the rectangle.
         """
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """
+        Generate a string representation of the rectangle.
+
+        Returns:
+            str: A string representation of the rectangle using '#' characters.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            result = ""
+            for _ in range(self.__height):
+                result += '#' * self.__width + '\n'
+            return result.rstrip()
+
+    def __repr__(self):
+        """
+        Generate a representation of the rectangle.
+
+        Returns:
+            str: A string representation of the rectangle for debugging purposes.
+        """
+        return f"Rectangle({self.__width}, {self.__height})"
+
+    def __del__(self):
+        """Destructor for the Rectangle class."""
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1

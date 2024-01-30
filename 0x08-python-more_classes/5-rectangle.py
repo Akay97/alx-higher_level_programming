@@ -97,3 +97,31 @@ class Rectangle:
             int: The perimeter of the rectangle.
         """
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """
+        Generate a string representation of the rectangle.
+
+        Returns:
+            str: A string representation of the rectangle using '#' characters.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        else:
+            result = ""
+            for _ in range(self.__height):
+                result += '#' * self.__width + '\n'
+            return result.rstrip()
+
+    def __repr__(self):
+        """
+        Generate a representation of the rectangle.
+
+        Returns:
+            str: A string representation of the rectangle for debugging purposes.
+        """
+        return f"Rectangle({self.__width}, {self.__height})"
+
+    def __del__(self):
+        """Destructor for the Rectangle class."""
+        print("Bye rectangle...")
