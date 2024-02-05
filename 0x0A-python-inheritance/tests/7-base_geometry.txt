@@ -1,0 +1,31 @@
+BaseGeometry Class README
+
+This Python script defines a class named BaseGeometry, which serves as a base class for geometrical objects.
+
+### Class Structure:
+
+- **BaseGeometry:** A class representing the base geometry.
+
+### Methods:
+
+1. **area(self):**
+    - Raises an Exception with the message "area() is not implemented".
+    - Subclasses are expected to override this method.
+
+2. **integer_validator(self, name, value):**
+    - Validates the given value as a positive integer.
+    - Parameters:
+        - name: A string representing the name of the value.
+        - value: The value to be validated.
+    - Raises:
+        - TypeError: If the value is not an integer.
+        - ValueError: If the value is less than or equal to 0.
+
+### Usage:
+
+This class can be used as a base class for defining geometric objects. Subclasses can inherit from BaseGeometry and implement the area method according to their specific geometry.
+
+### Additional Notes:
+
+- Ensure to create an instance of a subclass to use the implemented functionality.
+- This script does not include an example of how to use the class directly; it is intended to be inherited and extended by other classes.
