@@ -1,0 +1,18 @@
+MyList Class README
+
+This Python script defines a custom class named MyList, which inherits from the built-in list class.
+
+### Class Structure:
+
+- **MyList:** A custom class inheriting from the built-in list class.
+
+### Methods:
+
+1. **print_sorted(self):**
+    - Prints the elements of the list in ascending order.
+    - Utilizes the sorted() function to achieve the ascending order.
+
+### Usage:
+
+This class extends the functionality of the built-in list class by providing an additional method, `print_sorted()`, which allows users to print the elements of the list in ascending order.
+

@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+A simple module containing a function to look up and return a list of attributes of an object, excluding methods.
+"""
+
+
 def lookup(obj):
     """
     Returns a list of attributes of the given object, excluding methods.
